@@ -1,3 +1,11 @@
+/* TAILWIND CSS CONFIGURATIONS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* IMPORTING FONTS FOR GOOGLE FONTS  */
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 /* THESE ARE DEFAULT COLOR SCHEME AND FONT SCHEME  */
 
 :root {
@@ -20,4 +28,11 @@
   box-sizing: border-box;
   list-style-type: none;
   text-decoration: none;
+}
+
+.heading {
+  font-family: var(--font-head);
+}
+.body {
+  font-family: var(--font-body);
 }

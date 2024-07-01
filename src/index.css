@@ -1,0 +1,23 @@
+/* THESE ARE DEFAULT COLOR SCHEME AND FONT SCHEME  */
+
+:root {
+  --red-primary: #ff0000;
+  -red-secondary: #ff1313;
+  --black: #000000;
+  --dark: #111111;
+  --gray: #c4c4c4;
+  --light-gray: #f7f7f7;
+  --purple: #2c234d;
+  --font-head: Oswald, sans-serif;
+  --font-body: "Roboto Condensed", sans-serif;
+}
+
+/* CSS RESET  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+}

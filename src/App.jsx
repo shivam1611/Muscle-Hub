@@ -9,6 +9,7 @@ import SchedulePage from "./pages/SchedulePage/SchedulePage";
 
 function App() {
   return (
+<<<<<<< HEAD
     <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
@@ -21,6 +22,13 @@ function App() {
       </Routes>
     </Router>
   );
+=======
+    <div >
+      <h1 className="heading">Hello Codeshey</h1>
+      <p className="body">Hello Codeshey</p>
+    </div>
+  )
+>>>>>>> main
 }
 
 export default App;

@@ -9,12 +9,13 @@
 /* THESE ARE DEFAULT COLOR SCHEME AND FONT SCHEME  */
 
 :root {
-  --red-primary: #ff0000;
-  -red-secondary: #ff1313;
+  --red-primary: #ed563b;
+  --red-secondary: #ec0b0b;
   --black: #000000;
   --dark: #111111;
-  --gray: #c4c4c4;
+  --gray: #9d9a9a;
   --light-gray: #f7f7f7;
+  --white:white;
   --purple: #2c234d;
   --font-head: Oswald, sans-serif;
   --font-body: "Roboto Condensed", sans-serif;
@@ -30,9 +31,20 @@
   text-decoration: none;
 }
 
+<<<<<<< HEAD
+.diff{
+  color: var(--red-primary);
+}
+.text-sm{
+  font-size: 1rem;
+  color: var(--gray);
+  font-family: var(--font-body);
+}
+=======
 .heading {
   font-family: var(--font-head);
 }
 .body {
   font-family: var(--font-body);
 }
+>>>>>>> main

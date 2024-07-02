@@ -1,0 +1,73 @@
+/* Navbar header section styling  */
+.navbar_section {
+  height: 5.2rem;
+  background-color: rgba(199, 199, 199, 0.2);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+ 
+}
+
+/* Navbar main body styling  */
+.navbar {
+  height: 100%;
+  max-width: 70%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 1rem;
+}
+
+/* Logo Styling */
+.logo{
+    font-size: clamp(1.4rem, 2.2rem, 3vw);
+    font-family: var(--font-head);
+    font-weight: 800;
+    color: var(--white);
+}
+.diff{
+    color: var(--red-primary);
+    margin-left: .3rem;
+}
+
+
+/* Navigation box styling  */
+.navlist{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.nav_items{
+    font-size: .9rem;
+    font-family: var(--font-head);
+    color: var(--white);
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.nav_items:hover{
+    color: var(--red-primary);
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+/* SIGN UP BUTTON STYLING  */
+.btn_sm{
+    width: 5rem;
+    height: 2.5rem;
+    display: block;
+    color: var(--white);
+    font-size: .8rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    border: none;
+    transition: all .3s ease;
+    background-color: var(--red-primary);
+}
+.btn_sm:hover{
+    background-color: var(--red-secondary);
+    cursor: pointer;
+}

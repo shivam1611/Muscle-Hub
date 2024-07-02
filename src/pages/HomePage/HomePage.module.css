@@ -1,0 +1,62 @@
+/* MAIN HOME PAGE BANNER STYLING  */
+
+.banner {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(20, 36, 52, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+
+}
+
+/* BACKGROUND VIDEO STYLING  */
+.background_video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+    /* CALL TO ACTION CONTAINER STYLING  */
+    .call_to_action{
+        width: 55rem;
+        max-width: 70rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        text-transform: uppercase;
+        font-family: var(--font-head);
+        margin-top: 2rem;
+    }
+    .banner_text_sm{
+        font-weight: 600;
+        font-size: 1.3rem;
+        letter-spacing: 1.1px;
+        color: var(--white);
+    }
+    .banner_text_lg{
+        font-size: 5.5rem;
+        font-weight: 700;
+        margin-top: 2.4rem;
+        color: var(--white);
+    }
+    .diff{
+        color: var(--red-primary);
+    }
+    .banner_btn_lg{
+        width: 12rem;
+        height: 3rem;
+        border: none;
+        color: var(--white);
+        background-color: var(--red-primary);
+        margin-top: 1.8rem;
+        font-size: .9rem;
+        text-transform: uppercase;
+    }

@@ -1,7 +1,4 @@
-/* TAILWIND CSS CONFIGURATIONS */
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
 
 /* IMPORTING FONTS FOR GOOGLE FONTS  */
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
@@ -31,7 +28,6 @@
   text-decoration: none;
 }
 
-<<<<<<< HEAD
 .diff{
   color: var(--red-primary);
 }
@@ -40,11 +36,3 @@
   color: var(--gray);
   font-family: var(--font-body);
 }
-=======
-.heading {
-  font-family: var(--font-head);
-}
-.body {
-  font-family: var(--font-body);
-}
->>>>>>> main

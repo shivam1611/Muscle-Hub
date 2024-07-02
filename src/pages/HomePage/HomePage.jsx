@@ -14,7 +14,7 @@ function HomePage() {
           loop
           muted
           playsInline
-          className={classes.background_video}
+          className="background_video"
         >
           <source
             src="https://videos.pexels.com/video-files/3195943/3195943-uhd_2560_1440_25fps.mp4"
@@ -23,7 +23,7 @@ function HomePage() {
         </video>
         <div className={classes.call_to_action}>
           <p className={classes.banner_text_sm}>Push Your Limits at Muscle Hub</p>
-          <h1 className={classes.banner_text_lg}>let's Start <span className="diff">now!!</span></h1>
+          <h1 className={classes.banner_text_lg}>let&apos;s Start <span className="diff">now!!</span></h1>
           <button className={classes.banner_btn_lg}>Become a member</button>
         </div>
       </div>

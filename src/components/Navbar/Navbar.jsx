@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import classes from "./Navbar.module.css";
-import { Link } from "react-router-dom";
+import { NavLink as Link } from "react-router-dom";
 
 function Navbar() {
   return (
@@ -35,7 +35,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link  to={'/about'}> <button className={classes.btn_sm}>Sign up</button></Link>
+            <Link  to={'/accounts'}> <button className={classes.btn_sm}>Sign up</button></Link>
           </li>
         </ul>
       </div>

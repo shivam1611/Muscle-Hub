@@ -1,6 +1,7 @@
 import Navbar from "../../components/Navbar/Navbar";
 import classes from "./ClassesPage.module.css";
 import ClassesContainer from '../../components/ClassesContainer/ClassesContainer'
+import Footer from "../../components/Footer/Footer";
 
 function ClassesPage() {
   return (
@@ -28,6 +29,7 @@ function ClassesPage() {
           levels
         </p>
           <ClassesContainer/>
+          <Footer/>
       </div>
     </div>
   );

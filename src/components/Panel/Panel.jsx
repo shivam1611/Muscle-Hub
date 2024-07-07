@@ -1,4 +1,5 @@
 import classes from './panel.module.css'
+
 // eslint-disable-next-line react/prop-types
 function Panel({title,img,para}) {
   return (

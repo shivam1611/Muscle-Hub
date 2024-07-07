@@ -1,11 +1,17 @@
 import Navbar from "../../components/Navbar/Navbar";
 import classes from "./HomePage.module.css";
 import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 // import { Link } from "react-router-dom";
 
 function HomePage() {
   return (
-    <div className={classes.homepage_container}>
+    <motion.div
+      className={classes.homepage_container}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ stiffnesss: 200 }}
+    >
       <Navbar />
 
       {/* BANNER SECTION  */}
@@ -17,19 +23,35 @@ function HomePage() {
           />
         </video>
         <div className={classes.call_to_action}>
-          <p className={classes.banner_text_sm}>
+          <motion.p
+            className={classes.banner_text_sm}
+            initial={{ opacity: 0, y: -10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ stiffnesss: 400, duration: 1 }}
+          >
             Push Your Limits at Muscle Hub
-          </p>
-          <h1 className={classes.banner_text_lg}>
+          </motion.p>
+          <motion.h1
+            className={classes.banner_text_lg}
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ stiffnesss: 300, delay: 1, duration: 0.8 }}
+          >
             let&apos;s Start <span className="diff">now!!</span>
-          </h1>
+          </motion.h1>
           <NavLink to={"/accounts"}>
-            {" "}
-            <button className={classes.banner_btn_lg}>Become a member</button>
+            <motion.button
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ stiffnesss: 250, delay: 2 }}
+              className={classes.banner_btn_lg}
+            >
+              Become a member
+            </motion.button>
           </NavLink>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

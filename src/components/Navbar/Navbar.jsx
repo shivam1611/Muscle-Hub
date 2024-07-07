@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import classes from "./Navbar.module.css";
 import { NavLink as Link } from "react-router-dom";
 
@@ -7,6 +7,10 @@ function Navbar() {
 
   // Navbar in use ref 
   const navbar = useRef(null);
+
+  // State of thr mobile navigation 
+
+  const [showNav, setShowNav] = useState(false)
 
   // Effect that will run when we scroll 
   useEffect(() => {
@@ -28,8 +32,9 @@ function Navbar() {
   }, []);
 
   // Function that handle the navigation during mobile view 
-  const handleNavbar = () =>{
-    navbar.current && navbar.current.classList.toggle("show")
+  
+  function handleNavbar() {
+    navbar.current.classList.toggle("show")
   }
 
   return (
@@ -39,7 +44,7 @@ function Navbar() {
           Muscle
           <span className={classes.diff}>Hub</span>
         </div>
-        <div onClick={handleNavbar}> 
+        <div onClick={()=>handleNavbar()}> 
         <i className={`fa-solid fa-bars-staggered ${classes.mobile_bar_icon}`}></i>
         </div>
         <ul className={classes.navlist}>

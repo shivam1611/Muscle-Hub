@@ -15,14 +15,14 @@
   background-color: var(--dark);
 }
 
-.show{
-    left: 0;
+.show {
+  left: 0;
 }
 
 /* Navbar main body styling  */
 .navbar {
   height: 100%;
-  max-width: 65rem;
+  width: 65rem;
   margin-inline: auto;
   display: flex;
   justify-content: space-between;
@@ -43,15 +43,15 @@
 }
 /* navigation icon for mobile and tablet view styling   */
 
-.mobile_bar_icon{
-    position: absolute;
-    right: 2rem;
-    top: 1.5rem;
-    font-size: 2rem;
-    color: var(--red-primary);
-    /* color: var(--white); */
-    transform: rotate(180deg);
-    display: none;
+.mobile_bar_icon {
+  position: absolute;
+  right: 2rem;
+  top: 1.5rem;
+  font-size: 2rem;
+  color: var(--red-primary);
+  /* color: var(--white); */
+  transform: rotate(180deg);
+  display: none;
 }
 
 /* Navigation box styling  */
@@ -92,43 +92,42 @@
   cursor: pointer;
 }
 
-
 /* Styling for 1024px */
 
 @media screen and (max-width: 1024px) {
-    .navbar{
-        width: 100%;
-    }
-    .logo{
-        font-size: 2rem;
-    }
-    .nav_items{
-        font-size: .7rem;
-    }
+  .navbar {
+    width: 100%;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .nav_items {
+    font-size: 0.7rem;
+  }
 }
 /* Styling for 768px  */
 
-@media screen and (max-width:768px) {
-    .navlist{
-        position: fixed;
-        left: -40rem;
-        top: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: rgba(227, 227, 227, 0.9);
-       
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-    .nav_items{ 
-        color: var(--dark);
-        width: 100%;
-        display: block;
-        height: 2rem;
-       }
-    .mobile_bar_icon{
-        display: block;
-    }
+@media screen and (max-width: 768px) {
+  .navlist {
+    position: fixed;
+    left: -40rem;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(227, 227, 227, 0.9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .nav_items {
+    color: var(--dark);
+    width: 100%;
+    display: block;
+    height: 2rem;
+    font-size: 1.3rem;
+  }
+  .mobile_bar_icon {
+    display: block;
+  }
 }

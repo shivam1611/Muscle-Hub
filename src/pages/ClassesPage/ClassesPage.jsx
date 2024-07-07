@@ -1,13 +1,18 @@
 import Navbar from "../../components/Navbar/Navbar";
 import classes from "./ClassesPage.module.css";
-import ClassesContainer from '../../components/ClassesContainer/ClassesContainer'
+import ClassesContainer from "../../components/ClassesContainer/ClassesContainer";
 import Footer from "../../components/Footer/Footer";
+import { motion } from "framer-motion";
 
 function ClassesPage() {
   return (
-    <div>
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ stiffnesss: 250 }}
+    >
       <Navbar />
-      <div className={classes.banner}>
+      <motion.div className={classes.banner}>
         <video autoPlay loop muted playsInline className="background_video">
           <source
             src="https://videos.pexels.com/video-files/3196220/3196220-uhd_2560_1440_25fps.mp4"
@@ -18,20 +23,30 @@ function ClassesPage() {
           Unlock Your Potential with Muscle Hub.
         </h1>
         <h1 className={`${classes.heading_lg} diff`}>Start you journey now</h1>
-      </div>
+      </motion.div>
       <div className={classes.class_container}>
-        <h1 className={classes.heading_md}>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 1, stiffnesss: 200 }}
+          className={classes.heading_md}
+        >
           Our <span className="diff">Classes</span>
-        </h1>
-        <p className={classes.classes_text}>
+        </motion.h1>
+        <motion.p
+          className={classes.classes_text}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: .5, stiffnesss: 200 }}
+        >
           Heyy Future Body Builders !! Here are five classes you can offer at
           Muscle Hub, along with descriptions of each class and their respective
           levels
-        </p>
-          <ClassesContainer/>
-          <Footer/>
+        </motion.p>
+        <ClassesContainer />
+        <Footer />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

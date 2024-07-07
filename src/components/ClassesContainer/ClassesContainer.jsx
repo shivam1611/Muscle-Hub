@@ -1,6 +1,7 @@
 import ClassCard from "../ClassCard/ClassCard";
 import Panel from "../Panel/Panel";
 import classes from "./ClassesContainer.module.css";
+
 import { useState } from "react";
 
 function ClassesContainer() {

@@ -1,12 +1,17 @@
-import Navbar from "../../components/Navbar/Navbar"
-
+import Navbar from "../../components/Navbar/Navbar";
+import { motion } from "framer-motion";
 
 function AboutPage() {
   return (
-    <div>
-      <Navbar/>
-      AboutPage</div>
-  )
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ stiffnesss: 250 }}
+    >
+      <Navbar />
+      AboutPage
+    </motion.div>
+  );
 }
 
-export default AboutPage
+export default AboutPage;

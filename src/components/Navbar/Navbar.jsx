@@ -18,7 +18,7 @@ function Navbar() {
       if (window.scrollY > 200) {
         navbar.current.classList.add(classes.scrolling_style);
       } else {
-        navbar.current.classList.remove(classes.scrolling_style);
+        navbar.current.classList.remove(classes.scrolling_style)
       }
     };
 

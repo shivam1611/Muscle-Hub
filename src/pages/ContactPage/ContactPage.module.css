@@ -71,7 +71,7 @@
 .form {
   width: 90%;
   height: 85%;
-  padding:2rem;
+  padding: 2rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -83,37 +83,37 @@
 .row {
   width: 100%;
   /* height: 4rem; */
-/* background-color: yellow; */
+  /* background-color: yellow; */
   display: flex;
   gap: 1rem;
   justify-content: flex-start;
   align-items: flex-start;
   /* flex-direction: column; */
 }
-.cont{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    align-items: flex-start;
-    gap: .5rem;
-    flex-direction: column;
+.cont {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-items: flex-start;
+  gap: 0.5rem;
+  flex-direction: column;
 }
-.label{
-    font-size: .9rem;
-    font-family: var(--font-head);
-    color: var(--white);
+.label {
+  font-size: 0.9rem;
+  font-family: var(--font-head);
+  color: var(--white);
 }
-.input_field{
-    height: 3.2rem;
-    padding-inline: .5rem;
-    font-family: var(--font-body);
-    color: var(--dark);
-    width: 100%;
-    border-radius: .3rem;
+.input_field {
+  height: 3.2rem;
+  padding-inline: 0.5rem;
+  font-family: var(--font-body);
+  color: var(--dark);
+  width: 100%;
+  border-radius: 0.3rem;
 }
-textarea{
-    width: 100%;
+textarea {
+  width: 100%;
   height: 9rem;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -124,14 +124,48 @@ textarea{
   font-size: 16px;
   resize: none;
 }
-.btn_lg{
-    width: 8rem;
-    height: 6rem;
-    padding: .7rem;
-    border: none;
-    color: var(--white);
-    background-color: var(--red-primary);
-    font-size: .9rem;
-    border-radius: .3rem;
-    
+.btn_lg {
+  width: 8rem;
+  height: 6rem;
+  padding: 0.7rem;
+  border: none;
+  color: var(--white);
+  background-color: var(--red-primary);
+  font-size: 0.9rem;
+  border-radius: 0.3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .card_container {
+    width: 90%;
+    height: fit-content;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .card_container{
+    grid-template-columns: repeat(1,1fr);
+    width: 90%;
+  }
+  .map_container {
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    margin: 10rem  auto;
+  }
+  .map_side,
+  .form_side {
+    width: 100%;
+    height: 35rem;
+  }
+  .form_side{
+    height:40rem;
+  }
+ 
+  .para{
+    width: 75%;
+  }
+  .row{
+    flex-direction: column;
+  }
 }
